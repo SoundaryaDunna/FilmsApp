@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type = "text/javascript" src="./films.js">
+        </script>
+        <link rel="stylesheet" href="./stylesheets/style.css">
+    </head>
+    <body>
+    <div id = "div">  
+    <form  id= "formid" onsubmit="return  API.createFilm()">
+        
+      <p><b>Add Film Title <input  type= "text"  class = "text" placeholder="Enter a film title" id="userinput" ></input></b></p>
+        <br>
+      <p><b>Add Ratings <input  type= "number"  class = "text" placeholder="Enter a film ratings" id="userinputRating" ></input></b></p>
+        <br>
+      <button type ="submit" class="button">CreateFilm</button>
+        <br>
+        <br>
+    </form>
+</div>  
+ 
+    <form class = "align" id= "formid1" onsubmit="return  API.getFilms()">    
+        <button type ="submit" class="button">GetFilms</button>
+        <br>
+        <br>
+        <br>
+        <table class= "center" id="titledisplay">
+
+        </table>
+    </form>
+    </body>
+</html>
